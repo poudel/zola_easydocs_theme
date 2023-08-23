@@ -55,9 +55,13 @@
                 <h1><a href="{{ config.base_url }}{{ _ugly_url }}">{{ config.title }}</a></h1>
             {% endif -%}
 
-            {% if config.extra.release -%}
-                <div id="release"></div>
+            {% if config.extra.subtitle -%}
+            <div>
+                <small>{{ config.extra.subtitle }}</small>
+            </div>
             {% endif -%}
+
+            <br>
 
             <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
             <div id="trees">
